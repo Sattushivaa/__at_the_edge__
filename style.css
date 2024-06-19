@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-size: 15pt;
+    background: gr
+}
+#land_on {
+  background: url(assets/bgland2.png) white fixed no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: 100vw auto;
+  text-align: center;
+  position: fixed;
+  z-index: -1;
+  transition: height 200ms;
+  overflow: hidden;
+  opacity: 1;
+}
+#land_on h1 {
+  margin-top: 0px;
+  color: royalblue
+}
+#pass {
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  color: white;
+  background: linear-gradient(74deg, #00053D, #383E77) 100vw 100vh;
+  /*
+  TODO:remove display none
+  */
+  /* display : none */;
+}
+.glass {
+  background: #FFFFFF29 0 0 no-repeat;
+  padding: 50px 10px;
+  text-align: center;
+  color: white;
+  margin: 50px;
+  margin-top: 50;
+  border-radius: 10px;
+}
+#passok {
+  padding: 10px 50px;
+  border-radius: 10px;
+  color: white;
+  background: #90AA51;
+  margin: 10px;
+}
+#start {
+  padding: 10px 50px;
+  position: relative;
+  bottom: -90vh;
+}
+#slides {
+  width: 100vw;
+  height: 100vh;
+  background: #61AF6E;
+  position: fixed;
+  z-index: -2;
+}
+#slides {
+  padding: 0px;
+  width: 100vw;
+  overflow: hidden;
+  perspective: 800px;
+}
+.slide {
+  margin: 0px;
+  width: 80vw;
+  height: 80vh;
+  left: 10vw;
+  top: 10vh;
+  transform-origin: left;
+  transition: transform 2s;
+  background: #6D74BD;
+  border: 10px solid white;
+  position: fixed;
+  transform: rotateY(0deg);
+  z-index: -2;
+  transform-style: preserve-3d;
+  color: white;
+  font-family: cursive;
+  font-size: 2em;
+  padding: 10px;
+}
+.slide_btns {
+  position: fixed;
+  bottom: 20px;
+  padding: 10px 50px;
+  display: none;
+  z-index: 1000;
+}
+.slide_btns.lt {
+  left: 20px;
+}
+.slide_btns.rt {
+  right: 20px;
+}
+#bm {
+  display :none;
+}
+.img {
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center, -400px;
+  background-size: cover;
+}
+.slide>div:nth-child(2) {
+  /* background: wheat; */
+  padding-top: 20px
+}
+#thanks {
+  position: fixed;
+  margin-top: 200px;
+  z-index: -2;
+  opacity :0;
+  transition: opacity 300ms;
+}
