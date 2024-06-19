@@ -105,7 +105,7 @@ body {
   display :none;
 }
 .img {
-  min-height: 400px;
+  min-height: 250px;
   background-repeat: no-repeat;
   background-position: center, -400px;
   background-size: cover;
